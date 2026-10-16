@@ -18,8 +18,11 @@ roadimpact-review = "roadimpact.review:main"
 roadimpact-evidence = "roadimpact.evidence:main"
 roadimpact-benchmark = "roadimpact.benchmark:main"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+packages = ["roadimpact"]
+
+[tool.setuptools.package-dir]
+roadimpact = "research/offline"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
