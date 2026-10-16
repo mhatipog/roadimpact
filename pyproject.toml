@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "humanitarian-road-impact"
+version = "0.4.0"
+description = "Read-only OSM road-gap hypotheses for humanitarian mapping research"
+requires-python = ">=3.11"
+dependencies = ["networkx>=3.2,<4", "shapely>=2,<3", "requests>=2.31,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+roadimpact = "roadimpact.__main__:main"
+roadimpact-review = "roadimpact.review:main"
+roadimpact-evidence = "roadimpact.evidence:main"
+roadimpact-benchmark = "roadimpact.benchmark:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
