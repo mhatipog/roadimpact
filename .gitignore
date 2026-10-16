@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.egg-info/
+build/
+dist/
+*.pbf
+*.osm
+outputs/
+local-review/
+PRIVATE_*
+candidate_universe.json
+.env

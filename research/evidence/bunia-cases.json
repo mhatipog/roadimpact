@@ -1,0 +1,126 @@
+{
+  "dataset": "Bunia structural QA pilot, October 15 2026 (UNVERIFIED)",
+  "provenance": "OpenStreetMap main API independently queried 2026-10-15; Esri World Imagery acquired 2025-06-14, reported 0.34m GSD / 5m positional accuracy; no imagery pixels committed",
+  "cases": [
+    {
+      "case_id": "bunia-20261015-a",
+      "osm": {
+        "checked_at": "2026-10-15T19:24:44Z",
+        "endpoint_exists": true,
+        "target_exists": true,
+        "shared_node": false,
+        "geometrical_gap": true,
+        "gap_m": 20.96,
+        "endpoint_way": "1557213423",
+        "target_way": "697900497",
+        "endpoint_last_edit": "2026-09-07T22:56:29Z",
+        "target_last_edit": "2026-09-07T22:56:29Z",
+        "endpoint_tags": {
+          "highway": "service",
+          "surface": "unpaved"
+        },
+        "target_tags": {
+          "highway": "service",
+          "service": "alley",
+          "surface": "unpaved"
+        }
+      },
+      "imagery": {
+        "provider": "Esri World Imagery (Vivid / Vantor)",
+        "acquired_at": "20250614",
+        "resolution_m": 0.34,
+        "absolute_accuracy_m": 5,
+        "license_for_osm_review": true,
+        "locally_registered": false,
+        "zoom_tiles": {
+          "17": [
+            {
+              "bytes": 20623,
+              "pixel_std": 43.71
+            }
+          ],
+          "18": [
+            {
+              "bytes": 16976,
+              "pixel_std": 49.13
+            }
+          ],
+          "19": [
+            {
+              "bytes": 2521,
+              "pixel_std": 5.37
+            }
+          ],
+          "20": [
+            {
+              "bytes": 2521,
+              "pixel_std": 5.37
+            }
+          ]
+        }
+      },
+      "visual_observation": "possible_passage",
+      "local_access_verified": false
+    },
+    {
+      "case_id": "bunia-20261015-b",
+      "osm": {
+        "checked_at": "2026-10-15T19:24:44Z",
+        "endpoint_exists": true,
+        "target_exists": true,
+        "shared_node": false,
+        "geometrical_gap": true,
+        "gap_m": 20.17,
+        "endpoint_way": "1202230038",
+        "target_way": "1231151451",
+        "endpoint_last_edit": "2026-07-28T09:18:49Z",
+        "target_last_edit": "2023-12-14T17:09:29Z",
+        "endpoint_tags": {
+          "highway": "residential",
+          "surface": "dirt"
+        },
+        "target_tags": {
+          "highway": "service",
+          "service": "alley",
+          "surface": "dirt"
+        }
+      },
+      "imagery": {
+        "provider": "Esri World Imagery (Vivid / Vantor)",
+        "acquired_at": "20250614",
+        "resolution_m": 0.34,
+        "absolute_accuracy_m": 5,
+        "license_for_osm_review": true,
+        "locally_registered": false,
+        "zoom_tiles": {
+          "17": [
+            {
+              "bytes": 19946,
+              "pixel_std": 46.63
+            }
+          ],
+          "18": [
+            {
+              "bytes": 16595,
+              "pixel_std": 47.12
+            }
+          ],
+          "19": [
+            {
+              "bytes": 2521,
+              "pixel_std": 5.37
+            }
+          ],
+          "20": [
+            {
+              "bytes": 2521,
+              "pixel_std": 5.37
+            }
+          ]
+        }
+      },
+      "visual_observation": "occluded",
+      "local_access_verified": false
+    }
+  ]
+}
