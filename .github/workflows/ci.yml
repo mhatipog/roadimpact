@@ -18,7 +18,7 @@ jobs:
       - name: Run original evidence protocol tests
         run: python -m unittest discover -s research/evidence -p 'test_*.py' -v
       - name: Run package source regressions
-        run: python -m pytest -q research/offline/test_core.py
+        run: python -m pytest -q research/offline/test_core.py research/offline/test_experiment.py
       - name: Confirm installed command-line tools
         run: |
           roadimpact --help > /dev/null
