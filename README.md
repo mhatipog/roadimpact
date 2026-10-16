@@ -11,14 +11,14 @@ RoadImpact generates **unverified** road-topology hypotheses for trained mappers
 ```bash
 python -m pip install -e '.[test]'
 python -m unittest discover -s research/evidence -p 'test_*.py' -v
-python -m pytest -q research/offline/test_core.py
+python -m pytest -q research/offline/test_core.py research/offline/test_experiment.py
 roadimpact --help
 roadimpact-review --help
 roadimpact-evidence --help
 roadimpact-benchmark --help
 ```
 
-The GitHub workflow checks all four CLI commands, **22 package tests** and **9 independent evidence protocol tests**, with no network access or real-world OSM modifications required.
+The GitHub workflow checks all four CLI commands, **27 package/offline tests** and **9 independent evidence protocol tests**, with no network access or real-world OSM modifications required.
 
 The installable `roadimpact` package is currently mapped to `research/offline` in `pyproject.toml`. The separate historical comparative detector is `research/offline/experiment.py` (use `--help`).
 
